@@ -1,0 +1,241 @@
+body {
+  background-color: #e5e5e5;
+  font-family: "Cabin", sans-serif;
+  color: #0a162b;
+  min-height: 100vh;
+}
+
+/*TOP SECTION*/
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.topSection img {
+  margin: 21px auto 13px;
+  display: block;
+}
+
+.topSection p {
+  text-align: center;
+}
+
+.topSection__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 15px;
+}
+
+.topSection__listItem a {
+  color: #0a162b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  min-width: 110px;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 926px) {
+  .topSection__listItem a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+/*MIDDLE SECTION */
+
+.middleSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 40px 0 50px 0;
+}
+
+.middleSection::before {
+  content: "";
+  border-bottom: 2px solid #0a162b;
+  position: absolute;
+  width: 90%;
+  top: 0;
+}
+
+.middleSection::after {
+  content: "";
+  border-bottom: 2px solid #0a162b;
+  position: absolute;
+  width: 90%;
+  bottom: 10px;
+}
+
+.middleSection h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.3px;
+}
+
+.middleSection p {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+@media (max-width: 880px) {
+  .wrapper {
+    position: absolute;
+    top: 45px;
+    text-align: center;
+  }
+  form {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+  select {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 550px) {
+  .middleSection__btn {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      #ffc327;
+    padding: 16px 50px;
+    background-blend-mode: overlay, normal;
+    border: none;
+    border-radius: 30px;
+    color: #0a162b;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 550px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .middleSection__btn {
+    margin-top: 10px;
+    padding: 17px 115px;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      #ffc327;
+    background-blend-mode: overlay, normal;
+    border: none;
+    border-radius: 30px;
+    color: #0a162b;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 375px) {
+  .middleSection select {
+    border-radius: 5px;
+    border: 2px solid #d0d0d0;
+    box-sizing: border-box;
+    width: 336px;
+    height: 55px;
+    font-size: 18px;
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .middleSection select {
+    border-radius: 5px;
+    border: 2px solid #d0d0d0;
+    box-sizing: border-box;
+    width: 270px;
+    height: 48px;
+    font-size: 18px;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+/*BOTTOM SECTION*/
+
+.bottomSection {
+  background-color: #f3fbff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 57vh;
+}
+
+.bottomSection h3 {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px 30px 20px 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 456px;
+  display: flex;
+  align-items: center;
+}
+
+.col-sm {
+  max-width: 456px;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+}
+
+.bottomSection h4 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 7px;
+}
+
+.bottomSection p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 28px;
+}
